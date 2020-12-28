@@ -1,0 +1,11 @@
+.sign-in-wrapper {
+  width: auto;
+  height: 40;
+  padding: 10px 30px;
+}
+#sign-in-button-div {
+  float: right;
+}
+body {
+  margin: 0px;
+}
