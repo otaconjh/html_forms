@@ -3,18 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="sign-in-wrapper">
-      <div>
-        <p>Already have an Intuit account?</p>
-        <a href="http://">I forgot my User ID or Password</a>
+    <header class="page-header">
+      <div class="login-container">
+        <div class="text-div">
+          <p>Already have an Intuit account?</p>
+          <a class="link blue-link" href="#">I forgot my User ID or Password</a>
+        </div>
+        <button class="button signin-button"></button>
       </div>
-      <div id="sign-in-button-div">
-        <button id="sign-in-button">Sign In</button>
+    </header>
+    <div class="logo"></div>
+    <div class="mini-logos"></div>
+    <main class="main-content">
+      <div class="form-container">
+        <head>
+          <h1>Create an Intuit account</h1>
+          <h2>One account for everything Intuit, including Mint. <a class="link blue-link" href="#">Learn More</a></h2>
+        </head>
+        <form action="" class="form">
+          <label for="email" class="form-label">Email Address</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            class="email-input form-input"
+            placeholder="You'll verify this later"
+          /><span class="form-span"></span> <label for="phone" class="form-label">Phone (recommended)</label
+          ><input type="tel" name="phone" id="phone" class="form-input" />
+          <span class="form-span">Standard call, messaging or data rates may apply.</span>
+          <label id="password-label" for="password" class="form-label">Password</label
+          ><input type="password" name="password" id="password" class="form-input" />
+          <span class="form-span"></span>
+          <input type="button" value="Create Account" class="button create-button" />
+        </form>
+        <div class="privacy-statement">
+          By clicking Create Account, you agree to our
+          <a class="link blue-link" href="https://www.mint.com/terms">Terms</a> and have read and acknowledge our
+          <a class="link blue-link" href="https://www.intuit.com/privacy/statement/">Global Privacy Statement</a>.
+        </div>
+        <div class="recaptcha">
+          <span class="recaptcha-info"
+            >Invisible reCAPTCHA by Google
+            <a href="https://www.google.com/intl/en/policies/privacy/" class="link blue-link">Privacy Policy</a> and
+            <a href="https://www.google.com/intl/en/policies/terms/" class="link blue-link">Terms of Use</a>.</span
+          >
+        </div>
       </div>
-    </div>
+    </main>
+    <footer class="page-footer">
+      <ul class="footer-list">
+        <li class="footer-list-item"><a class="link gray-link" href="https://www.intuit.com/legal/">Legal</a></li>
+        <li class="footer-list-item">
+          <a class="link gray-link" href="https://www.intuit.com/privacy/statement/">Privacy</a>
+        </li>
+        <li class="footer-list-item"><a class="link gray-link" href="http://security.intuit.com/">Security</a></li>
+      </ul>
+      <div class="copyright">
+        © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered
+        trademarks of Intuit Inc.<br />
+        Terms and conditions, features, support, pricing, and service options subject to change without notice.
+      </div>
+    </footer>
   </body>
 </html>
